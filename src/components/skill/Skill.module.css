@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    background-color: #cfcfcf;
+    padding: 20px;
+}
+
+.icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: #a5a5a5;
+}
+
+.title {
+    font-size: 18px;
+    border: 1px solid;
+}
+
+.description {
+    word-break: break-word;
+    border: 1px solid;
+}

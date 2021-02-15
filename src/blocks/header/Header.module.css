@@ -1,0 +1,34 @@
+.header {
+    background-color: #7ec3e9;
+    height: 80px;
+}
+
+.headerContainer {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menuList {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuItem {
+    background-color: #eec36f;
+}
+
+@media (max-width: 763px) {
+    .headerContainer {
+        justify-content: center;
+    }
+}
