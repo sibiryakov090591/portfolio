@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./Header.module.css";
-import stylesContainer from "../../styles/commonStyles.module.css";
+import commonStyles from "../../styles/commonStyles.module.css";
 
 const Header: React.FC = () => {
     return (
         <header className={styles.header}>
-            <div className={`${stylesContainer.container} ${styles.headerContainer}`}>
+            <div className={`${styles.headerContainer} ${commonStyles.container}`}>
                 <nav className={styles.menu}>
                     <ul className={styles.menuList}>
                         <li className={styles.menuItem}><a href="#">Главная</a></li>

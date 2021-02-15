@@ -9,7 +9,7 @@ type PropsType = {
 const Skill: React.FC<PropsType> = (props) => {
     return (
         <div className={styles.wrapper}>
-            <img className={styles.icon} src={props.iconUrl} alt="Skill icon"/>
+            <img className={styles.icon} src={props.iconUrl} alt="Project icon"/>
             <h3 className={styles.title}>
                 {props.title}
             </h3>

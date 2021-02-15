@@ -2,12 +2,13 @@ import React from "react";
 import styles from "./Skills.module.css";
 import commonStyles from "../../styles/commonStyles.module.css";
 import Skill from "../../components/skill/Skill";
+import Title from "../../components/title/Title";
 
 const Skills: React.FC = () => {
     return (
         <section className={styles.skills}>
             <div className={`${commonStyles.container} ${styles.skillsContainer}`}>
-                <h2 className={commonStyles.title}>Мои скилы</h2>
+                <Title title="Мои скилы"/>
                 <div className={styles.skillsWrapper}>
                     <Skill title={"React"} iconUrl="#">
                         Описание моих навыков в React <br/><br/>

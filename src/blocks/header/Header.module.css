@@ -27,8 +27,9 @@
     background-color: #eec36f;
 }
 
-@media (max-width: 763px) {
+@media (max-width: 792px) {
     .headerContainer {
         justify-content: center;
+        margin-right: 0;
     }
 }
