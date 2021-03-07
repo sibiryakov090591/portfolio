@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2c1a2174.chunk.css",
+    "main.css": "/portfolio/static/css/main.ba29e0a6.chunk.css",
     "main.js": "/portfolio/static/js/main.9f670cfb.chunk.js",
     "main.js.map": "/portfolio/static/js/main.9f670cfb.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.1f005a1a.js",
@@ -12,8 +12,9 @@
     "static/js/3.de102b24.chunk.js.map": "/portfolio/static/js/3.de102b24.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.b183c589.chunk.css.map": "/portfolio/static/css/2.b183c589.chunk.css.map",
-    "static/css/main.2c1a2174.chunk.css.map": "/portfolio/static/css/main.2c1a2174.chunk.css.map",
+    "static/css/main.ba29e0a6.chunk.css.map": "/portfolio/static/css/main.ba29e0a6.chunk.css.map",
     "static/js/2.f821fb2f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.f821fb2f.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/portfolio/static/media/NunitoSans-Regular.87d92665.ttf",
     "static/media/Screenshot_2.11127769.jpg": "/portfolio/static/media/Screenshot_2.11127769.jpg",
     "static/media/Social_1.cba63b77.jpg": "/portfolio/static/media/Social_1.cba63b77.jpg",
     "static/media/Social_2.7bedb6e7.jpg": "/portfolio/static/media/Social_2.7bedb6e7.jpg",
@@ -36,7 +37,7 @@
     "static/js/runtime-main.1f005a1a.js",
     "static/css/2.b183c589.chunk.css",
     "static/js/2.f821fb2f.chunk.js",
-    "static/css/main.2c1a2174.chunk.css",
+    "static/css/main.ba29e0a6.chunk.css",
     "static/js/main.9f670cfb.chunk.js"
   ]
 }
