@@ -6,26 +6,35 @@ export const useStyles = makeStyles((theme: AppTheme) => ({
     height: "100vh",
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-between",
+    justifyContent: "center",
     "@media screen and (max-width: 900px)": {
       flexDirection: "column-reverse",
       justifyContent: "center",
     },
+  },
+  heroInner: {
+    display: "flex",
+    position: "relative",
   },
   hero: {
     height: "100vh",
     background: theme.palette.background.dark,
   },
   presentation: {
-    color: theme.palette.text.secondary,
+    position: "absolute",
+    bottom: "-55px",
+    right: "-80%",
+    color: theme.palette.text.green,
     fontSize: 24,
     width: 360,
+    minHeight: 100,
     "@media screen and (max-width: 450px)": {
       fontSize: 20,
       width: 300,
     },
   },
   photoWrapper: {
+    opacity: 0,
     borderRadius: "50%",
     overflow: "hidden",
     width: 300,

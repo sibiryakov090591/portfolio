@@ -10,3 +10,7 @@ li {
 * {
     box-sizing: border-box;
 }
+
+.typewriterCursor {
+    display: none;
+}
