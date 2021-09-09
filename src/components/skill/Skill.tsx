@@ -1,23 +1,21 @@
 import React from "react";
-import styles from "./Skill.module.css";
+import { useStyles } from "./styles";
 
 type PropsType = {
-    iconUrl: string
-    title: string
-}
+  iconUrl: string;
+  title: string;
+};
 
-const Skill: React.FC<PropsType> = (props) => {
-    return (
-        <div className={styles.wrapper}>
-            <img className={styles.icon} src={props.iconUrl} alt="Project icon"/>
-            <h3 className={styles.title}>
-                {props.title}
-            </h3>
-            <p className={styles.description}>
-                {props.children}
-            </p>
-        </div>
-    )
-}
+const Skill: React.FC<PropsType> = ({ iconUrl, title, children }) => {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.wrapper}>
+      <img className={classes.icon} src={iconUrl} alt="Project icon" />
+      <h3 className={classes.title}>{title}</h3>
+      <p className={classes.description}>{children}</p>
+    </div>
+  );
+};
 
 export default Skill;

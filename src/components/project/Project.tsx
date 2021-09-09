@@ -1,25 +1,55 @@
 import React from "react";
-import styles from "./Project.module.css";
+import { useStyles } from "./styles";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import visit from "../../images/footer/siteVisitHover.svg";
 
 type PropsType = {
-    imgUrl: string
-    title: string
-}
+  images: any[];
+  title: string;
+  link: string;
+};
 
-const Project: React.FC<PropsType> = (props) => {
-    return (
-        <div className={styles.wrapper}>
-            <img className={styles.img} src={props.imgUrl} alt="work image"/>
-            <div className={styles.description}>
-                <h3 className={styles.title}>
-                    {props.title}
-                </h3>
-                <p className={styles.text}>
-                    {props.children}
-                </p>
-            </div>
-        </div>
-    )
-}
+const Project: React.FC<PropsType> = ({ title, images, link, children }) => {
+  const classes = useStyles();
+
+  const settings = {
+    fade: true,
+    dots: false,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    speed: 1500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
+  return (
+    <div className={classes.wrapper}>
+      <div className={classes.sliderWrapper}>
+        <Slider {...settings}>
+          {images.map((img, i) => (
+            <img key={i} className={classes.img} src={img} alt="work image" />
+          ))}
+        </Slider>
+        <a href={link} target="_blank">
+          <div className={classes.sliderHoverMask}>
+            <img
+              className={classes.sliderHoverImg}
+              src={visit}
+              alt="hover_image"
+            />
+          </div>
+        </a>
+      </div>
+      <div className={classes.description}>
+        <h3 className={classes.title}>{title}</h3>
+        <p className={classes.text}>{children}</p>
+      </div>
+    </div>
+  );
+};
 
 export default Project;

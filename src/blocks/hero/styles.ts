@@ -1,5 +1,6 @@
 import { makeStyles } from "@material-ui/styles";
 import { AppTheme } from "../../themes/paletteTypes";
+import my_photo from "../../images/my_photo.jpg";
 
 export const useStyles = makeStyles((theme: AppTheme) => ({
   heroContainer: {
@@ -28,13 +29,14 @@ export const useStyles = makeStyles((theme: AppTheme) => ({
     fontSize: 24,
     width: 360,
     minHeight: 100,
+    lineHeight: 1.2,
     "@media screen and (max-width: 450px)": {
       fontSize: 20,
       width: 300,
     },
   },
-  photoWrapper: {
-    opacity: 0,
+  photo: {
+    background: `center / contain url(${my_photo}) no-repeat`,
     borderRadius: "50%",
     overflow: "hidden",
     width: 300,
@@ -42,9 +44,6 @@ export const useStyles = makeStyles((theme: AppTheme) => ({
     "@media screen and (max-width: 900px)": {
       marginBottom: 40,
     },
-  },
-  photo: {
-    width: "100%",
   },
 }));
 

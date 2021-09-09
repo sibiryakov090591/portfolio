@@ -8,7 +8,7 @@ const HireMe: React.FC = () => {
   return (
     <section className={styles.hire}>
       <Container className={styles.hireContainer}>
-        <Title title="Рассматриваю варианты удаленной работы" />
+        <Title title="Рассматриваю варианты удаленной работы" index="03" />
         <Button>Нанять меня</Button>
       </Container>
     </section>
