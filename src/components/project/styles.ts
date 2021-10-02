@@ -16,9 +16,6 @@ export const useStyles = makeStyles((theme: AppTheme) => ({
     position: "relative",
   },
   sliderHoverMask: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
     position: "absolute",
     bottom: 4,
     top: 0,
@@ -26,16 +23,18 @@ export const useStyles = makeStyles((theme: AppTheme) => ({
     right: 0,
     transition: "all 200ms ease",
     "&:hover": {
-      backgroundColor: "rgba(0, 0, 0, 0.7)",
-      "& img": {
-        opacity: 1,
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      "& svg": {
+        color: theme.palette.background.green,
       },
     },
   },
-  sliderHoverImg: {
+  sliderIcon: {
+    position: "absolute",
+    bottom: 7,
+    right: 7,
+    color: "#5c5c5c",
     transition: "all 200ms ease",
-    opacity: 0,
-    filter: "drop-shadow(0 0 5px #64ffda)",
   },
   title: {
     fontSize: 18,

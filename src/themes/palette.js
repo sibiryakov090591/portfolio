@@ -11,10 +11,12 @@ export default {
     secondary: "#ccd6f6",
     green: "#64ffda",
   },
-
-  // Background
   background: {
     dark: "#0a192f",
+    green: "#3ba29c",
+    white: "#ededed",
+  },
+  button: {
     green: "#3ba29c",
   },
 
@@ -29,7 +31,6 @@ export default {
     main: colors.blue[700],
   },
 
-  // Some
   app: {
     red500: "#E94160",
     red400: "#F07188",

@@ -3,9 +3,8 @@ import { AppTheme } from "../../themes/paletteTypes";
 
 export const useStyles = makeStyles((theme: AppTheme) => ({
   skills: {
-    minHeight: "100vh",
     backgroundColor: theme.palette.background.dark,
-    paddingBottom: 20,
+    paddingBottom: 50,
   },
   skillsContainer: {
     display: "flex",
@@ -15,7 +14,7 @@ export const useStyles = makeStyles((theme: AppTheme) => ({
   },
   skillsWrapper: {
     display: "flex",
-    justifyContent: "space-around",
+    justifyContent: "center",
     flexWrap: "wrap",
     width: "100%",
     gap: 20,
@@ -23,6 +22,29 @@ export const useStyles = makeStyles((theme: AppTheme) => ({
       flexDirection: "column",
       alignItems: "center",
     },
+  },
+  wrapper: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    maxWidth: 300,
+    padding: 30,
+  },
+  title: {
+    fontSize: 18,
+    color: theme.palette.text.green,
+  },
+  description: {
+    fontSize: "1.1rem",
+    lineHeight: 1.4,
+    margin: 0,
+    wordBreak: "break-word",
+    color: theme.palette.text.primary,
+  },
+  icon: {
+    display: "block",
+    height: 60,
+    marginBottom: 20,
   },
 }));
 

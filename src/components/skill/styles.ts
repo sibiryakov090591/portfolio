@@ -7,13 +7,15 @@ export const useStyles = makeStyles((theme: AppTheme) => ({
     flexDirection: "column",
     alignItems: "center",
     maxWidth: 300,
-    padding: 20,
+    padding: 30,
   },
   title: {
     fontSize: 18,
     color: theme.palette.text.green,
   },
   description: {
+    fontSize: "1.1rem",
+    lineHeight: 1.4,
     margin: 0,
     wordBreak: "break-word",
     color: theme.palette.text.primary,
@@ -21,6 +23,7 @@ export const useStyles = makeStyles((theme: AppTheme) => ({
   icon: {
     display: "block",
     height: 60,
+    marginBottom: 20,
   },
 }));
 

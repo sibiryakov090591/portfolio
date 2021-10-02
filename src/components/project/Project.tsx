@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import visit from "../../images/footer/siteVisitHover.svg";
+import AspectRatioIcon from "@material-ui/icons/AspectRatio";
 
 type PropsType = {
   images: any[];
@@ -36,11 +37,7 @@ const Project: React.FC<PropsType> = ({ title, images, link, children }) => {
         </Slider>
         <a href={link} target="_blank">
           <div className={classes.sliderHoverMask}>
-            <img
-              className={classes.sliderHoverImg}
-              src={visit}
-              alt="hover_image"
-            />
+            <AspectRatioIcon className={classes.sliderIcon} />
           </div>
         </a>
       </div>

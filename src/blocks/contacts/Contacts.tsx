@@ -1,23 +1,26 @@
 import React from "react";
-import styles from "./Contacts.module.css";
 import Title from "../../components/title/Title";
-import Button from "../../components/button/Button";
-import { Container } from "@material-ui/core";
+import { Container, Button } from "@material-ui/core";
+import { useStyles } from "./styles";
+import useAppTheme from "../../themes/ThemeStyles";
 
 const Contacts: React.FC = () => {
+  const classes = useStyles();
+  const appTheme = useAppTheme();
+
   return (
-    <section className={styles.contacts}>
-      <Container className={styles.contactsContainer}>
+    <section className={classes.contacts}>
+      <Container className={classes.contactsContainer}>
         <Title title="Контакты" index="04" />
-        <form className={styles.form}>
-          <input className={styles.input} type="text" placeholder="input" />
-          <input className={styles.input} type="text" placeholder="input" />
+        <form className={classes.form}>
+          <input className={classes.input} type="text" placeholder="input" />
+          <input className={classes.input} type="text" placeholder="input" />
           <textarea
-            className={styles.textarea}
+            className={classes.textarea}
             placeholder="textarea"
           ></textarea>
         </form>
-        <Button>Отправить</Button>
+        <Button className={appTheme.button}>Send</Button>
       </Container>
     </section>
   );
